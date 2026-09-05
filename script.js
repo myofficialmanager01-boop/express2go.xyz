@@ -1,4 +1,4 @@
-const SUPABASE_URL = "https://qrdyeewoyeecyknswdux.supabase.co/rest/v1/";
+const SUPABASE_URL = "https://qrdyeewoyeecyknswdux.supabase.co";
 const SUPABASE_KEY = "sb_publishable_aQD7vtzSznySGGfZVWl1xg_Gy0wcn_x";
 
 async function trackShipment() {
