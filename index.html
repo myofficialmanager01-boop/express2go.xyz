@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Your Company | Logistics & Delivery</title>
+  <meta name="description" content="Reliable logistics, freight and delivery services.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="container nav">
+      <a class="logo" href="#home">YOUR<span>LOGISTICS</span></a>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#process">How It Works</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn small" href="#contact">Get a Quote</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">LOGISTICS • FREIGHT • DELIVERY</p>
+          <h1>Moving your world, <span>one delivery at a time.</span></h1>
+          <p class="lead">Professional logistics solutions designed to keep your shipments moving safely, efficiently and on schedule.</p>
+          <div class="actions">
+            <a class="btn" href="#contact">Request a Quote</a>
+            <a class="btn ghost" href="#tracking">Track Shipment</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <p class="eyebrow">SHIPMENT TRACKING</p>
+          <h2>Track your shipment</h2>
+          <p>Enter your tracking code below.</p>
+          <div class="track-row">
+            <input id="trackingCode" placeholder="Tracking code">
+            <button class="btn" onclick="trackShipment()">Track</button>
+          </div>
+          <p id="trackingResult" class="result"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <p class="eyebrow">OUR SERVICES</p>
+        <h2>Logistics solutions built around you.</h2>
+        <div class="cards">
+          <article><div class="icon">✈</div><h3>Air Freight</h3><p>Fast, organized transportation for time-sensitive shipments.</p></article>
+          <article><div class="icon">◈</div><h3>Ocean Freight</h3><p>Practical freight solutions for larger international shipments.</p></article>
+          <article><div class="icon">▣</div><h3>Road Freight</h3><p>Dependable ground transportation from pickup to destination.</p></article>
+          <article><div class="icon">↗</div><h3>Import & Export</h3><p>Support for moving goods across borders and markets.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section alt">
+      <div class="container">
+        <p class="eyebrow">OUR PROCESS</p>
+        <h2>Simple from pickup to delivery.</h2>
+        <div class="steps">
+          <div><b>01</b><h3>Contact us</h3><p>Tell us what you need shipped and where it is going.</p></div>
+          <div><b>02</b><h3>Plan & move</h3><p>We organize the right transportation option for your shipment.</p></div>
+          <div><b>03</b><h3>Track & deliver</h3><p>Follow your shipment and receive delivery updates.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about">
+        <div>
+          <p class="eyebrow">WHY CHOOSE US</p>
+          <h2>Reliable service. Clear communication.</h2>
+          <p>We focus on dependable logistics, careful handling and responsive customer support.</p>
+        </div>
+        <div class="stats">
+          <div><strong>24/7</strong><span>Online support</span></div>
+          <div><strong>Fast</strong><span>Response times</span></div>
+          <div><strong>Safe</strong><span>Careful handling</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">CONTACT US</p>
+          <h2>Need a quote or have a question?</h2>
+          <p>Email us and we'll get back to you.</p>
+          <a class="email" href="mailto:uzorchik3600@gmail.com">uzorchik3600@gmail.com</a>
+        </div>
+        <form onsubmit="sendEmail(event)">
+          <input id="name" required placeholder="Your name">
+          <input id="email" type="email" required placeholder="Your email">
+          <input id="subject" required placeholder="Subject">
+          <textarea id="message" required placeholder="How can we help?"></textarea>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <div class="logo">YOUR<span>LOGISTICS</span></div>
+      <p>© 2026 Your Logistics. All rights reserved.</p>
+      <a href="mailto:uzorchik3600@gmail.com">uzorchik3600@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
